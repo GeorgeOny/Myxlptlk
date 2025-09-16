@@ -1,0 +1,532 @@
+:root {
+    --bg-color:rgb(0, 0, 0);
+    --text-color: rgba(255, 255, 255, 0.877);
+    --you-profile-bg-color: rgba(255, 255, 255, 0.336);
+    --for-the-grey-color:  rgba(255, 255, 255, 0.884);
+    --in-logo: invert(1);
+    --story-outline:  black 4px solid;
+}
+
+button {
+    align-content: center;
+    margin-left: 60px;
+    font-size: 9px;
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--text-color); /* changes with theme */
+}
+
+
+
+.light-theme {
+    --bg-color: rgba(255, 255, 255, 0.925);
+    --text-color: rgba(0, 0, 0, 0.877);
+    --for-the-grey-color:  rgba(0, 0, 0, 0.726);
+    --in-logo: invert(0);
+    --story-outline:  rgb(255, 255, 255) 4px solid;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.page-wrapper {
+    overflow: hidden;
+    scroll-behavior: smooth;
+    min-height: 1900px;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    color: var(--text-color);
+    font-family: 'InstagramSans-Regular', sans-serif;
+    /* font-size: 11px; */
+}
+
+.side-bar {
+    width: 20%;
+    height: 600px;
+    position: fixed;
+    background-color: var(--bg-color);
+    border-right: solid 1px rgba(128, 128, 128, 0.322);
+     transition: background-color 0.6s ease, color 0.6s ease;
+}
+
+.main-body {
+    transition: background-color 0.6s ease, color 0.6s ease;
+    width: 100%;
+    height: fit-content;
+    background-color: var(--bg-color);
+   
+   
+}
+.body-main {
+    width: 80%;
+    height: fit-content;
+     margin-left: 245px;
+    padding: 10px 20px;
+     display: flex;
+}
+
+
+.content {
+    width: 60%;
+    height: 100%;
+    margin-left: 20px;
+}
+
+.content:hover {
+    cursor: pointer;
+}
+
+.SFY {
+    /* border-left: solid 1px rgba(128, 128, 128, 0.39); */
+    width: 30%;
+    height: 100%;
+
+}
+
+.SFY-you {
+    height: 100px;
+    width: 100%;
+    display: flex;
+
+}
+
+.you-profile {
+    height: 40px;
+    width: 18%;
+    border-radius: 50%;
+    outline: 1px solid rgba(255, 255, 255, 0.788);
+    background-color:var(--you-profile-bg-color);
+    margin-left: 5px;
+    align-self: center;
+}
+
+.you-profile img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.username {
+    font-weight: normal;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    font-size: 12px;
+
+}
+
+.username .sub {
+    color:var(--for-the-grey-color);
+    font-family: 'InstagramSans-light', sans-serif;
+}
+
+.switch-accounts {
+    width: 20%;
+    color: rgb(0, 119, 255);
+    align-self: center;
+    text-align: end;
+
+
+}
+
+.SFY-random {
+    margin-top: -10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.SFY-about {
+    font-size: 10px;
+}
+
+.SFY-about a {
+   color: var(--text-color);
+    border: none;
+    text-decoration: none;
+}
+
+.text-1 {
+    color:var(--for-the-grey-color);
+}
+
+.text-2 {
+    color: var(--text-color);
+}
+
+.suggestions {
+    min-height: 350px;
+    height: auto;
+    width: 100%;
+}
+
+.suggestion {
+
+    height: 55px;
+    width: 100%;
+    display: flex;
+
+}
+
+.sug-prof img {
+    height: 30px;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.suggestion .Follow {
+    width: 20%;
+    color: rgb(0, 119, 255);
+    align-self: center;
+    text-align: end;
+}
+
+.sug-prof {
+    height: 30px;
+    width: 12%;
+    border-radius: 50%;
+    /* outline: 1px solid white; */
+    background-color: var(--you-profile-bg-color);
+    margin-left: 5px;
+    align-self: center;
+}
+
+.stories {
+    height: 80px;
+    /* border-bottom: solid 1px grey; */
+    width: 90%;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex: 0 0 auto;
+}
+
+.stories::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.logo {
+    margin-top: 10px;
+    margin-left: 25px;
+    padding: 20px 0px;
+    height: 40px;
+    width: 40%;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    width: 85%;
+    height: 80%;
+}
+
+.item {
+    /* padding-left: 10px; */
+    /* font-weight: 200; */
+    align-content: center;
+    font-family: 'InstagramSans-Medium', sans-serif;
+    color: var(--text-color);
+    border-radius: 5px;
+    width: 100%;
+    height: 8%;
+    padding: 3px 3px 0px 10px;
+
+}
+
+.item-icon {
+    font-size: 20px;
+}
+
+.item:hover {
+    cursor: pointer;
+    background-color: #bdbdbd3a;
+}
+
+.item p {
+    font-size: 14px;
+}
+
+.item-profile {
+     display: flex;
+    gap: 10px;
+}
+.item-profile p {
+    /* height: 100%; */
+    align-self: center;
+}
+.item-profile-2 {
+    height: 25px;
+    width: 15%;
+    border-radius: 50%;
+    /* outline: 1px solid white; */
+    background-color: var(--you-profile-bg-color);
+    margin-left: 5px;
+    align-self: center;
+   
+}
+
+.item-profile-2 img {
+     height: 30px;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.insta-logo {
+    filter: var(--in-logo);
+    height: 100%;
+    width: 100%;
+}
+
+@font-face {
+    font-family: 'InstagramSans-Light';
+    src: url(/InstagramSansFontFamily/InstagramSans-Light.ttf);
+}
+
+@font-face {
+    font-family: 'InstagramSans-Regular';
+    src: url(../InstagramSansFontFamily/InstagramSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'InstagramSans-Medium';
+    src: url(../InstagramSansFontFamily/InstagramSans-Medium.ttf);
+}
+
+
+.story {
+    transition: background-color 0.6s ease, color 0.4s ease;
+    outline:#520280, 2px solid;
+    height: 70px;
+    width: 70%;
+    border-radius: 50%;
+    background: linear-gradient(45deg,
+            #ff7c11,
+            #ffdc7d,
+            #ff0095,
+            
+            #515bd4);
+    /* margin-left: 10px; */
+    align-content: center;
+}
+
+.container {
+    height: 80px;
+    width: 20%;
+}
+
+.container p {
+    font-size: 12px;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.user-story {
+    
+    outline: var(--story-outline);
+    height: 57px;
+    border-radius: 50%;
+    width: 82%;
+    display: flex;
+    justify-self: center;
+}
+
+.profile {
+    /* border-top: solid 1px grey; */
+    height: 40px;
+    width: 70%;
+    /* border-bottom: solid 1px grey; */
+    display: flex;
+
+
+}
+
+.profile-more {
+    width: 22%;
+    text-align: end;
+    align-content: center;
+}
+
+.container-2 {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    width: 70%;
+    border: solid 1px rgba(128, 128, 128, 0.418);
+    border-radius: 2px;
+    /* background-color: rgb(255, 205, 205); */
+    background-color: black;
+}
+
+.content-of-creator {
+    overflow: hidden;
+    height: 500px;
+    width: 70%;
+    align-content: center;
+}
+
+.content-of-creator video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.reactions {
+    position: relative;
+    color: var(--text-color);
+    font-size: 18px;
+    height: 20px;
+    width: 70%;
+    /* border-bottom: solid 1px grey; */
+}
+
+.bookmark {
+    position: absolute;
+    left: 387px;
+}
+
+
+.comments {
+    color: var(--text-color);
+    font-size: 24px;
+    font-weight: 20;
+    height: 100px;
+    width: 70%;
+    padding-bottom: 20px;
+    border-bottom: solid 1px grey;
+}
+
+.comments p {
+    font-size: 12px;
+    line-height: 20px
+}
+.comments p span {
+    color: var(--for-the-grey-color);
+}
+.main {
+    margin-top: 25px;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-left: 75px;
+
+}
+
+.icon-of-creator {
+
+    height: 80%;
+    width: 8%;
+    border-radius: 50%;
+    outline: 1px solid rgba(255, 255, 255, 0.178);
+    margin-left: 5px;
+    align-self: center;
+}
+
+.icon-of-creator img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.profile-text {
+    width: 70%;
+    font-size: 16px;
+    margin-left: 5px;
+    align-self: center;
+    font-family: 'InstagramSans-Regular', sans-serif;
+}
+
+.profile-text h5 {
+    font-weight: 500;
+}
+
+.profile-text p {
+    font-size: 13px;
+}
+
+.main-suggested {
+    /* background-color: #520280; */
+    height: 30px;
+    padding: 10px 0px;
+    width: 70%;
+    font-size: 12px;
+    margin-left: 5px;
+    align-content: center;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.main-suggested-sub2 {
+    align-content: center;
+}
+.main-suggested-sub1 {
+    align-content: center;
+}
+   @media (max-width: 600px) {
+    .side-bar{
+       display: none;
+    }
+      .item-icon {
+        display: none;
+
+      }
+      /* .page-wrapper{
+        width: 80%;
+      } */
+
+      .body-main{
+        margin-left: 0px;
+        width: 100%;
+        padding: 0px 0px;
+      }
+      .SFY {
+        display: none;
+      }
+      .content{
+        width: 100%;
+        /* margin-left: 0px; */
+        /* margin-right: 50px; */
+      }
+      .stories{
+        width: 100%;
+      }
+      .main {
+        margin-left: 0px;
+        width: 100%;
+      }
+      .content-of-creator {
+        width: 100%;
+        /* margin-left: 30px; */
+        
+      }
+      .container-2 {
+        width: 80%;
+        margin-left: 30px;
+
+      }
+      .reactions {
+        margin-left: 20px;
+
+      }
+      .comments {
+        margin-left:20px ;
+      }
+    }
